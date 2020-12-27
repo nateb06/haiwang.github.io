@@ -1,4 +1,5 @@
-  //保存当前显示的索引
+window.onload = function (){ 
+ //保存当前显示的索引
   var index = 0;
   //保存读取隐藏文字的定时器标识
   var textTimeId
@@ -42,11 +43,7 @@
         one2.style.transform = "translateX(0px)";
         one3.style.opacity = "1";
         one3.style.transform = "scale(1)";
-        //移出第一张，否则会一直出现在后面
-        setTimeout(function () {
-          var id = document.getElementById('active')
-          id.classList.remove('active')
-        }, 2000)
+   
       },
       outAn: function () {
         var one1 = document.querySelector("#content .list .one .nav");
@@ -522,3 +519,4 @@
     Bind();
     ul.style.top = -index * (document.documentElement.clientHeight - headNode.offsetHeight) + "px";
   }
+}
