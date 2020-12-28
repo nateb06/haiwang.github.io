@@ -110,9 +110,6 @@ li {
         width: 600px;
         height: 400px;
         margin: 100px auto 0px;
-        //border: 4px solid #262b2e;
-        //box-shadow: 5px 10px 10px rgba(144, 134, 134, 0.5);
-        //border-radius: 10px;
         transition: 1s opacity ,1s transform;
         img {
           left: 0px;
@@ -272,10 +269,12 @@ li {
           margin-top: 50px;
           right: 10px;
           li {
+            margin-left: 20px;
             width: 259px;
             height: 310px !important;
             text-align: center;
             transition: 1s transform;
+            
             img {
               width: 100%;
               height: 100%;
@@ -585,7 +584,7 @@ li {
     .eight{
       background-image: url('../images/s4.jpg');
       .eight1 {
-        width: 360px;
+        width: 390px;
         position: absolute;
         top: 70px;
         left: 275px;
@@ -593,30 +592,31 @@ li {
         .line {
           width: 9px;
           height: 410px;
-          background: url("../images/plus_row.png") no-repeat;
+          background: url("../images/plus_row4.png") no-repeat;
           position: absolute;
           top: -7px;
           left: -5px;
         }
 
         .line:nth-of-type(2) {
-          left: 115px;
+          left: 121px;
         }
 
         .line:nth-of-type(3) {
-          left: 235px;
+          left: 250px;
         }
 
         .line:nth-of-type(4) {
-          left: 355px;
+          left: 380px;
         }
 
        
 
         .item {
+          float: left;
+          margin-right: 10px;
           width: 120px;
           height: 132px;
-          float: left;
           position: relative;
           transform-style: preserve-3d;
           perspective: 500px;
@@ -627,84 +627,32 @@ li {
             height: 100%;
             top: 0px;
             left: 0px;
-            background: url("../images/backImage/lf1.png") no-repeat center center;
             transition: 1s transform;
+            img{
+              display: block;
+              margin: 0 auto;
+              width: 85%;
+              line-height: 132px;
+            }
           }
-
-          &:nth-of-type(2) .backFace {
-            background: url("../images/backImage/sl1.png") no-repeat center center;
-          }
-
-          &:nth-of-type(3) .backFace {
-            background: url("../images/backImage/nm1.png") no-repeat center center;
-          }
-
-          &:nth-of-type(4) .backFace {
-            background: url("../images/backImage/wsb1.png") no-repeat center center;
-          }
-
-          &:nth-of-type(5) .backFace {
-            background: url("../images/backImage/sj1.png") no-repeat center center;
-          }
-
-          &:nth-of-type(6) .backFace {
-            background: url("../images/backImage/qb1.png") no-repeat center center;
-          }
-
-          &:nth-of-type(7) .backFace {
-            background: url("../images/backImage/lb1.png") no-repeat center center;
-          }
-
-          &:nth-of-type(8) .backFace {
-            background: url("../images/backImage/flq1.png") no-repeat center center;
-          }
-          &:nth-of-type(9) .backFace {
-            background: url("../images/backImage/blk1.png") no-repeat center center;
-          }
+          
 
           .face {
             width: 100%;
             height: 100%;
             top: 0px;
             left: 0px;
-            padding: 15px;
             color: white;
             box-sizing: border-box;
-            background-color: #009ee0;
             position: absolute;
             /*设置文字不显示*/
             transform: rotateY(180deg);
             backface-visibility: hidden;
             transition: 1s transform;
+            img{
+              width: 100%;
+            }
           }
-          &:nth-of-type(1) .face{
-              background: url("../images/backImage/lf2.png") no-repeat white;
-          }
-          &:nth-of-type(2) .face{
-            background: url("../images/backImage/sl2.png") no-repeat ;
-          }
-          &:nth-of-type(3) .face{
-            background: url("../images/backImage/nm2.png") no-repeat ;
-          }
-          &:nth-of-type(4) .face{
-            background: url("../images/backImage/wsb2.png") no-repeat ;
-          }
-          &:nth-of-type(5) .face{
-            background: url("../images/backImage/sj2.png") no-repeat ;
-          }
-          &:nth-of-type(6) .face{
-            background: url("../images/backImage/qb2.png") no-repeat ;
-          }
-          &:nth-of-type(7) .face{
-            background: url("../images/backImage/lb2.png") no-repeat ;
-          }
-          &:nth-of-type(8) .face{
-            background: url("../images/backImage/flq2.png") no-repeat ;
-          }
-          &:nth-of-type(9) .face{
-            background: url("../images/backImage/blk2.png") no-repeat ;
-          }
-
 
           &:hover .backFace {
             transform: rotateY(180deg);
@@ -718,7 +666,7 @@ li {
 
         p {
           position: absolute;
-          bottom:-90px;
+          bottom:-75px;
           width: 360px;
           font-size: 26px;
           color:#777761;

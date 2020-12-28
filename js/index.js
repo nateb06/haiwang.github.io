@@ -1,26 +1,26 @@
 window.onload = function (){ 
  //保存当前显示的索引
-  var index = 0;
+  let index = 0;
   //保存读取隐藏文字的定时器标识
-  var textTimeId
-  var textTimeId2
+  let textTimeId
+  let textTimeId2
   //获取头部
-  var header = document.getElementById("header");
+  let header = document.getElementById("header");
   //获取头部文字导航
-  var active = document.querySelectorAll("#header .nav li");
+  let active = document.querySelectorAll("#header .nav li");
   //2 获取内容区视口的大小
-  var content = document.querySelector("#content");
+  let content = document.querySelector("#content");
   //获取内容区的整个ul
-  var ul = document.querySelector("#content .list ");
+  let ul = document.querySelector("#content .list ");
   //获取内容区ul下的每一个li，一个li代表一屏
-  var contentLis = document.querySelectorAll("#content .list>li");
+  let contentLis = document.querySelectorAll("#content .list>li");
   //获取轮播图按钮
-  var dot = document.querySelectorAll("#content .dot>li");
+  let dot = document.querySelectorAll("#content .dot>li");
 
 
   //0 控制音乐的播放
-  var music = document.querySelector(".music");
-  var audio = document.querySelector(".music #audio");
+  let music = document.querySelector(".music");
+  let audio = document.querySelector(".music #audio");
   music.onclick = function () {
     if (audio.paused) {
       audio.play();
@@ -33,12 +33,12 @@ window.onload = function (){
 
 
   //1 控制鼠标滚动切换屏入场动画
-  var arrAn = [
+  let arrAn = [
     {
       inAn: function () {
-        var one1 = document.querySelector("#content .list .one .nav");
-        var one2 = document.querySelector("#content .list .one .one2");
-        var one3 = document.querySelector("#content .list .one .one3");
+        let one1 = document.querySelector("#content .list .one .nav");
+        let one2 = document.querySelector("#content .list .one .one2");
+        let one3 = document.querySelector("#content .list .one .one3");
         one1.style.transform = "translateY(0px)";
         one2.style.transform = "translateX(0px)";
         one3.style.opacity = "1";
@@ -46,9 +46,9 @@ window.onload = function (){
    
       },
       outAn: function () {
-        var one1 = document.querySelector("#content .list .one .nav");
-        var one2 = document.querySelector("#content .list .one .one2");
-        var one3 = document.querySelector("#content .list .one .one3");
+        let one1 = document.querySelector("#content .list .one .nav");
+        let one2 = document.querySelector("#content .list .one .one2");
+        let one3 = document.querySelector("#content .list .one .one3");
 
         one1.style.transform = "translateY(1000px)";
         one2.style.transform = "translateX(1000px)";
@@ -59,22 +59,22 @@ window.onload = function (){
     },
     {
       inAn: function () {
-        var two1_list1 = document.querySelector(".two .two1 .two1_list .two1_list1");
-        var two1_list2 = document.querySelector(".two .two1 .two1_list .two1_list2");
-        var two1_list3 = document.querySelector(".two .two1 .two1_list .two1_list3");
-        var two2 = document.querySelector(".two .two2  ");
-        var twoId = document.getElementById("two2")
+        let two1_list1 = document.querySelector(".two .two1 .two1_list .two1_list1");
+        let two1_list2 = document.querySelector(".two .two1 .two1_list .two1_list2");
+        let two1_list3 = document.querySelector(".two .two1 .two1_list .two1_list3");
+        let two2 = document.querySelector(".two .two2  ");
+        let twoId = document.getElementById("two2")
         two1_list1.style.transform = "translateY(0px)"
         two1_list2.style.transform = "translateY(0px)"
         two1_list3.style.transform = "translateY(0px)"
         two2.style.transform = "translateY(0px)"
       },
       outAn: function () {
-        var two1_list1 = document.querySelector(".two .two1 .two1_list .two1_list1");
-        var two1_list2 = document.querySelector(".two .two1 .two1_list .two1_list2");
-        var two1_list3 = document.querySelector(".two .two1 .two1_list .two1_list3");
-        var two2 = document.querySelector(".two .two2  ");
-        var twoId = document.getElementById("two2")
+        let two1_list1 = document.querySelector(".two .two1 .two1_list .two1_list1");
+        let two1_list2 = document.querySelector(".two .two1 .two1_list .two1_list2");
+        let two1_list3 = document.querySelector(".two .two1 .two1_list .two1_list3");
+        let two2 = document.querySelector(".two .two2  ");
+        let twoId = document.getElementById("two2")
 
         two1_list1.style.transform = "translateY(1000px)"
         two1_list2.style.transform = "translateY(1200px)"
@@ -84,18 +84,18 @@ window.onload = function (){
     },
     {
       inAn: function () {
-        var three1_list1 = document.querySelector(".three1_list .three1_list1");
-        var three1_list2 = document.querySelector(".three1_list .three1_list2");
-        var three2 = document.querySelector(".three .three2");
+        let three1_list1 = document.querySelector(".three1_list .three1_list1");
+        let three1_list2 = document.querySelector(".three1_list .three1_list2");
+        let three2 = document.querySelector(".three .three2");
 
         three1_list1.style.transform = "translateX(0px)"
         three1_list2.style.transform = "translateX(0px)"
         three2.style.transform = "translateX(0px)"
       },
       outAn: function () {
-        var three1_list1 = document.querySelector(".three1_list .three1_list1");
-        var three1_list2 = document.querySelector(".three1_list .three1_list2");
-        var three2 = document.querySelector(".three .three2");
+        let three1_list1 = document.querySelector(".three1_list .three1_list1");
+        let three1_list2 = document.querySelector(".three1_list .three1_list2");
+        let three2 = document.querySelector(".three .three2");
 
         three1_list1.style.transform = "translateX(558px)"
         three1_list2.style.transform = "translateX(279px)"
@@ -104,10 +104,10 @@ window.onload = function (){
     },
     {
       inAn: function () {
-        var four1_list1 = document.querySelector(".four1_list .four1_list1");
-        var four1_list2 = document.querySelector(".four1_list .four1_list2");
-        var four1_list3 = document.querySelector(".four1_list .four1_list3");
-        var four2 = document.querySelector(".four .four2");
+        let four1_list1 = document.querySelector(".four1_list .four1_list1");
+        let four1_list2 = document.querySelector(".four1_list .four1_list2");
+        let four1_list3 = document.querySelector(".four1_list .four1_list3");
+        let four2 = document.querySelector(".four .four2");
         setTimeout(function () {
           four1_list2.style.transform = "translate(0,0)"
         }, 500);
@@ -120,10 +120,10 @@ window.onload = function (){
         }, 1000)
       },
       outAn: function () {
-        var four1_list1 = document.querySelector(".four1_list .four1_list1");
-        var four1_list2 = document.querySelector(".four1_list .four1_list2");
-        var four1_list3 = document.querySelector(".four1_list .four1_list3");
-        var four2 = document.querySelector(".four .four2");
+        let four1_list1 = document.querySelector(".four1_list .four1_list1");
+        let four1_list2 = document.querySelector(".four1_list .four1_list2");
+        let four1_list3 = document.querySelector(".four1_list .four1_list3");
+        let four2 = document.querySelector(".four .four2");
 
         four1_list1.style.transform = "translate(279px,-1000px)"
         four1_list3.style.transform = "translate(-279px,-1000px)"
@@ -133,10 +133,10 @@ window.onload = function (){
     },
     {
       inAn: function () {
-        var five1_list1 = document.querySelector(".five1_list .five1_list1");
-        var five1_list2 = document.querySelector(".five1_list .five1_list2");
-        var five1_list3 = document.querySelector(".five1_list .five1_list3");
-        var five2 = document.querySelector(".five .five2");
+        let five1_list1 = document.querySelector(".five1_list .five1_list1");
+        let five1_list2 = document.querySelector(".five1_list .five1_list2");
+        let five1_list3 = document.querySelector(".five1_list .five1_list3");
+        let five2 = document.querySelector(".five .five2");
 
         setTimeout(function () {
           five1_list1.style.transform = "translate(0,0)"
@@ -152,10 +152,10 @@ window.onload = function (){
         }, 1500)
       },
       outAn: function () {
-        var five1_list1 = document.querySelector(".five1_list .five1_list1");
-        var five1_list2 = document.querySelector(".five1_list .five1_list2");
-        var five1_list3 = document.querySelector(".five1_list .five1_list3");
-        var five2 = document.querySelector(".five .five2");
+        let five1_list1 = document.querySelector(".five1_list .five1_list1");
+        let five1_list2 = document.querySelector(".five1_list .five1_list2");
+        let five1_list3 = document.querySelector(".five1_list .five1_list3");
+        let five2 = document.querySelector(".five .five2");
 
         five1_list1.style.transform = "translate(1000px,-1000px)"
         five1_list2.style.transform = "translate(1000px,-1000px)"
@@ -166,10 +166,10 @@ window.onload = function (){
     },
     {
       inAn: function () {
-        var six1_list1 = document.querySelector(".six1_list .six1_list1");
-        var six1_list2 = document.querySelector(".six1_list .six1_list2");
-        var six1_list3 = document.querySelector(".six1_list .six1_list3");
-        var six2 = document.querySelector(".six .six2");
+        let six1_list1 = document.querySelector(".six1_list .six1_list1");
+        let six1_list2 = document.querySelector(".six1_list .six1_list2");
+        let six1_list3 = document.querySelector(".six1_list .six1_list3");
+        let six2 = document.querySelector(".six .six2");
 
         setTimeout(function () {
           six1_list2.style.transform = "translateX(0px)"
@@ -181,10 +181,10 @@ window.onload = function (){
         }, 1000)
       },
       outAn: function () {
-        var six1_list1 = document.querySelector(".six1_list .six1_list1");
-        var six1_list2 = document.querySelector(".six1_list .six1_list2");
-        var six1_list3 = document.querySelector(".six1_list .six1_list3");
-        var six2 = document.querySelector(".six .six2");
+        let six1_list1 = document.querySelector(".six1_list .six1_list1");
+        let six1_list2 = document.querySelector(".six1_list .six1_list2");
+        let six1_list3 = document.querySelector(".six1_list .six1_list3");
+        let six2 = document.querySelector(".six .six2");
 
         six1_list1.style.transform = "translateY(-1000px)"
         six1_list2.style.transform = "translateX(-1000px)"
@@ -196,13 +196,13 @@ window.onload = function (){
     {//先执行out 再执行in
       inAn: function () {
         //获取用于隐藏/显示的源文字
-        var hideText = document.getElementById('hideText');
-        var showText = document.getElementById('showText');
+        let hideText = document.getElementById('hideText');
+        let showText = document.getElementById('showText');
 
         //控制文字一个个码上去效果
-        var word = hideText.innerText; //总厂148
+        let word = hideText.innerText; //总厂148
         
-        var count = 0
+        let count = 0
         function showTextFn() {
           if (showText.innerText.length >= 151) {
             console.log('----')
@@ -219,8 +219,8 @@ window.onload = function (){
 
       outAn: function () {
         //获取用于隐藏/显示的源文字
-        var hideText = document.getElementById('hideText');
-        var showText = document.getElementById('showText');
+        let hideText = document.getElementById('hideText');
+        let showText = document.getElementById('showText');
 
         if ( !textTimeId){
           showText.innerText = ' '
@@ -238,13 +238,13 @@ window.onload = function (){
     {
       inAn: function (){
         //获取用于隐藏/显示的源文字
-        var hideText = document.getElementById('hideText_2');
-        var showText = document.getElementById('showText_2');
+        let hideText = document.getElementById('hideText_2');
+        let showText = document.getElementById('showText_2');
         
         //控制文字一个个码上去效果
-        var word = hideText.innerText; //总厂148
+        let word = hideText.innerText; //总厂148
         
-        var count = 0
+        let count = 0
         function showTextFn() {
           console.log('函数')
           if (showText.innerText.length >= 85) {
@@ -261,8 +261,8 @@ window.onload = function (){
       },
       outAn: function (){
         //获取用于隐藏/显示的源文字
-        var hideText = document.getElementById('hideText_2');
-        var showText = document.getElementById('showText_2');
+        let hideText = document.getElementById('hideText_2');
+        let showText = document.getElementById('showText_2');
 
         if ( !textTimeId2){
           showText.innerText = ' '
@@ -307,7 +307,6 @@ window.onload = function (){
   }
 
   Bind();
-
   //2控制内容区每一屏的高度
   function Bind() {
     content.style.height = document.documentElement.clientHeight - header.clientHeight + "px";
@@ -317,7 +316,7 @@ window.onload = function (){
   }
 
   //3鼠标滚轮事件
-  var timer;
+  let timer;
   roll();
   function roll() {
     //2.2鼠标滚轮事件，兼容性
@@ -378,6 +377,8 @@ window.onload = function (){
    * index:第一次调用不需要传递,top为0，刚好顶在header下面,后续滚动时会传递index
    */
   function move() {
+    //调用图片懒加载函数
+    lazy(index)
     //同步鼠标滚动到的屏
     ul.style.top = -index * (document.documentElement.clientHeight - header.offsetHeight) + "px";
     //同步文字导航
@@ -397,18 +398,19 @@ window.onload = function (){
     }, 500)
   }
 
-  var homeNode = document.querySelector("#content .list .one .one3");
+  let homeNode = document.querySelector("#content .list .one .one3");
+
   home3D();
   function home3D() {
     //保存上一次的索引
-    var oldIndex = 0;
+    let oldIndex = 0;
     //自动轮播的索引
     //自动轮播定时器
-    var timer;
+    let timer;
     //自动轮播索引
-    var autoIndex = 0;
-    var home1LiNodes = document.querySelectorAll("#content .list .one .one3>img");
-    var home2LiNodes = document.querySelectorAll("#content .list .one .nav>li")
+    let autoIndex = 0;
+    let home1LiNodes = document.querySelectorAll("#content .list .one .one3>img");
+    let home2LiNodes = document.querySelectorAll("#content .list .one .nav>li")
     //手动轮播
     for (let i = 0; i < home1LiNodes.length; i++) {
       home2LiNodes[i].onclick = function () {
@@ -509,7 +511,23 @@ window.onload = function (){
 
   }
 
-
+  //图片懒加载
+  lazy(index)
+  function lazy(index){
+    const arr = ['one','two','three','four','five','six','seven','eight']
+    switch (index) {
+      case index:
+        //获取指定li下的所有img标签
+        let imgArr = document.querySelectorAll(`.${arr[index]} img`)
+        for (var i = 0; i < imgArr.length; i++) {
+          imgArr[i].src = imgArr[i].getAttribute('data-src');
+        }
+        break;
+    
+      default:
+        break;
+    }
+  }
 
   //调整浏览器分辨率时执行
   window.onresize = function () {
@@ -517,6 +535,6 @@ window.onload = function (){
     //       1没有点击时屏幕只能出现一屏
     //       2放大点击时视口也只能出现一屏幕，需要重新调整每一屏li的高
     Bind();
-    ul.style.top = -index * (document.documentElement.clientHeight - headNode.offsetHeight) + "px";
+    ul.style.top = -index * (document.documentElement.clientHeight - header.offsetHeight) + "px";
   }
 }
