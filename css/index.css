@@ -526,7 +526,7 @@ li {
 #content .list .eight .eight1 .line {
   width: 9px;
   height: 410px;
-  background: url("../images/plus_row4.png") no-repeat;
+  background: url("../images/plus_row.png") no-repeat;
   position: absolute;
   top: -7px;
   left: -5px;
@@ -615,6 +615,134 @@ li {
   top: -270px;
   right: 50px;
 }
+#content .list .nine {
+  background: url('../images/s5.jpg');
+  /*最外层容器样式*/
+}
+#content .list .nine .wrap {
+  position: absolute;
+  top: 150px;
+  right: 200px;
+  width: 200px;
+  height: 200px;
+  /*包裹所有容器样式*/
+  /*鼠标移入后样式*/
+}
+#content .list .nine .wrap .cube {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  transform-style: preserve-3d;
+  transform: rotateX(-30deg) rotateY(-80deg);
+  animation: rotate 20s infinite;
+  /*匀速*/
+  animation-timing-function: linear;
+  /*定义小正方体样式*/
+}
+#content .list .nine .wrap .cube div {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  opacity: 0.8;
+  transition: all 0.4s;
+}
+#content .list .nine .wrap .cube div .pic {
+  width: 200px;
+  height: 200px;
+}
+#content .list .nine .wrap .cube .out_front {
+  transform: rotateY(0deg) translateZ(100px);
+}
+#content .list .nine .wrap .cube .out_back {
+  transform: translateZ(-100px) rotateY(180deg);
+}
+#content .list .nine .wrap .cube .out_left {
+  transform: rotateY(90deg) translateZ(100px);
+}
+#content .list .nine .wrap .cube .out_right {
+  transform: rotateY(-90deg) translateZ(100px);
+}
+#content .list .nine .wrap .cube .out_top {
+  transform: rotateX(90deg) translateZ(100px);
+}
+#content .list .nine .wrap .cube .out_bottom {
+  transform: rotateX(-90deg) translateZ(100px);
+}
+#content .list .nine .wrap .cube span {
+  display: bloack;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+#content .list .nine .wrap .cube .in_pic {
+  width: 100px;
+  height: 100px;
+}
+#content .list .nine .wrap .cube .in_front {
+  transform: rotateY(0deg) translateZ(50px);
+}
+#content .list .nine .wrap .cube .in_back {
+  transform: translateZ(-50px) rotateY(180deg);
+}
+#content .list .nine .wrap .cube .in_left {
+  transform: rotateY(90deg) translateZ(50px);
+}
+#content .list .nine .wrap .cube .in_right {
+  transform: rotateY(-90deg) translateZ(50px);
+}
+#content .list .nine .wrap .cube .in_top {
+  transform: rotateX(90deg) translateZ(50px);
+}
+#content .list .nine .wrap .cube .in_bottom {
+  transform: rotateX(-90deg) translateZ(50px);
+}
+#content .list .nine .wrap .cube:hover .out_front {
+  transform: rotateY(0deg) translateZ(200px);
+}
+#content .list .nine .wrap .cube:hover .out_back {
+  transform: translateZ(-200px) rotateY(180deg);
+}
+#content .list .nine .wrap .cube:hover .out_left {
+  transform: rotateY(90deg) translateZ(200px);
+}
+#content .list .nine .wrap .cube:hover .out_right {
+  transform: rotateY(-90deg) translateZ(200px);
+}
+#content .list .nine .wrap .cube:hover .out_top {
+  transform: rotateX(90deg) translateZ(200px);
+}
+#content .list .nine .wrap .cube:hover .out_bottom {
+  transform: rotateX(-90deg) translateZ(200px);
+}
+#content .list .nine .nine2 {
+  position: absolute;
+  top: 50px;
+  left: 265px;
+  width: 500px;
+}
+#content .list .nine .nine2 video {
+  border-radius: 15px;
+}
+#content .list .nine .nine3 {
+  position: absolute;
+  bottom: 120px;
+  width: 100%;
+  height: 200px;
+}
+#content .list .nine .nine3 img {
+  width: 100%;
+}
+#content .list .nine .nine4 #showText_3 {
+  position: absolute;
+  left: 450px;
+  bottom: 85px;
+  font-size: 20px;
+  width: 600px;
+  text-indent: 2em;
+  color: #C6C1B2;
+}
 #content .dot {
   width: 12px;
   position: absolute;
@@ -654,6 +782,14 @@ li {
   }
   100% {
     transform: translateX(0) rotateY(180deg);
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
   }
 }
 /*设置轮播图动画     从左往右 leftHide  rightShow*/

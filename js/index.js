@@ -4,6 +4,7 @@ window.onload = function (){
   //保存读取隐藏文字的定时器标识
   let textTimeId
   let textTimeId2
+  let textTimeId3
   //获取头部
   let header = document.getElementById("header");
   //获取头部文字导航
@@ -82,118 +83,7 @@ window.onload = function (){
         two2.style.transform = "translateY(-500px)"
       }
     },
-    {
-      inAn: function () {
-        let three1_list1 = document.querySelector(".three1_list .three1_list1");
-        let three1_list2 = document.querySelector(".three1_list .three1_list2");
-        let three2 = document.querySelector(".three .three2");
-
-        three1_list1.style.transform = "translateX(0px)"
-        three1_list2.style.transform = "translateX(0px)"
-        three2.style.transform = "translateX(0px)"
-      },
-      outAn: function () {
-        let three1_list1 = document.querySelector(".three1_list .three1_list1");
-        let three1_list2 = document.querySelector(".three1_list .three1_list2");
-        let three2 = document.querySelector(".three .three2");
-
-        three1_list1.style.transform = "translateX(558px)"
-        three1_list2.style.transform = "translateX(279px)"
-        three2.style.transform = "translateX(-1000px)"
-      }
-    },
-    {
-      inAn: function () {
-        let four1_list1 = document.querySelector(".four1_list .four1_list1");
-        let four1_list2 = document.querySelector(".four1_list .four1_list2");
-        let four1_list3 = document.querySelector(".four1_list .four1_list3");
-        let four2 = document.querySelector(".four .four2");
-        setTimeout(function () {
-          four1_list2.style.transform = "translate(0,0)"
-        }, 500);
-        setTimeout(function () {
-          four1_list1.style.transform = "translate(0,0)"
-          four1_list3.style.transform = "translate(0,0)"
-        }, 700)
-        setTimeout(function () {
-          four2.style.opacity = "1"
-        }, 1000)
-      },
-      outAn: function () {
-        let four1_list1 = document.querySelector(".four1_list .four1_list1");
-        let four1_list2 = document.querySelector(".four1_list .four1_list2");
-        let four1_list3 = document.querySelector(".four1_list .four1_list3");
-        let four2 = document.querySelector(".four .four2");
-
-        four1_list1.style.transform = "translate(279px,-1000px)"
-        four1_list3.style.transform = "translate(-279px,-1000px)"
-        four1_list2.style.transform = "translate( 0,-1000px)"
-        four2.style.opacity = "0"
-      }
-    },
-    {
-      inAn: function () {
-        let five1_list1 = document.querySelector(".five1_list .five1_list1");
-        let five1_list2 = document.querySelector(".five1_list .five1_list2");
-        let five1_list3 = document.querySelector(".five1_list .five1_list3");
-        let five2 = document.querySelector(".five .five2");
-
-        setTimeout(function () {
-          five1_list1.style.transform = "translate(0,0)"
-        }, 500)
-        setTimeout(function () {
-          five1_list2.style.transform = "translate(0,0)"
-        }, 1000)
-        setTimeout(function () {
-          five1_list3.style.transform = "translate(0,0)"
-        }, 1200)
-        setTimeout(function () {
-          five2.style.transform = "translate(0,0)"
-        }, 1500)
-      },
-      outAn: function () {
-        let five1_list1 = document.querySelector(".five1_list .five1_list1");
-        let five1_list2 = document.querySelector(".five1_list .five1_list2");
-        let five1_list3 = document.querySelector(".five1_list .five1_list3");
-        let five2 = document.querySelector(".five .five2");
-
-        five1_list1.style.transform = "translate(1000px,-1000px)"
-        five1_list2.style.transform = "translate(1000px,-1000px)"
-        five1_list3.style.transform = "translate( 1000px,-1000px)"
-        five2.style.transform = "translate( -1000px,-1000px)"
-
-      }
-    },
-    {
-      inAn: function () {
-        let six1_list1 = document.querySelector(".six1_list .six1_list1");
-        let six1_list2 = document.querySelector(".six1_list .six1_list2");
-        let six1_list3 = document.querySelector(".six1_list .six1_list3");
-        let six2 = document.querySelector(".six .six2");
-
-        setTimeout(function () {
-          six1_list2.style.transform = "translateX(0px)"
-        }, 500)
-        setTimeout(function () {
-          six1_list1.style.transform = "translateY(0px)"
-          six1_list3.style.transform = "translateY(0px)"
-          six2.style.transform = "translate( 0,0px)"
-        }, 1000)
-      },
-      outAn: function () {
-        let six1_list1 = document.querySelector(".six1_list .six1_list1");
-        let six1_list2 = document.querySelector(".six1_list .six1_list2");
-        let six1_list3 = document.querySelector(".six1_list .six1_list3");
-        let six2 = document.querySelector(".six .six2");
-
-        six1_list1.style.transform = "translateY(-1000px)"
-        six1_list2.style.transform = "translateX(-1000px)"
-        six1_list3.style.transform = "translateY( 1000px)"
-        six2.style.transform = "translate( 0,1000px)"
-
-      }
-    },
-    {//先执行out 再执行in
+    {//罗宾先执行out 再执行in
       inAn: function () {
         //获取用于隐藏/显示的源文字
         let hideText = document.getElementById('hideText');
@@ -235,14 +125,131 @@ window.onload = function (){
 
       }
     },
-    {
+    { //娜美
+      inAn: function () {
+        let four1_list1 = document.querySelector(".four1_list .four1_list1");
+        let four1_list2 = document.querySelector(".four1_list .four1_list2");
+        let four1_list3 = document.querySelector(".four1_list .four1_list3");
+        let four2 = document.querySelector(".four .four2");
+        setTimeout(function () {
+          four1_list2.style.transform = "translate(0,0)"
+        }, 500);
+        setTimeout(function () {
+          four1_list1.style.transform = "translate(0,0)"
+          four1_list3.style.transform = "translate(0,0)"
+        }, 700)
+        setTimeout(function () {
+          four2.style.opacity = "1"
+        }, 1000)
+      },
+      outAn: function () {
+        let four1_list1 = document.querySelector(".four1_list .four1_list1");
+        let four1_list2 = document.querySelector(".four1_list .four1_list2");
+        let four1_list3 = document.querySelector(".four1_list .four1_list3");
+        let four2 = document.querySelector(".four .four2");
+
+        four1_list1.style.transform = "translate(279px,-1000px)"
+        four1_list3.style.transform = "translate(-279px,-1000px)"
+        four1_list2.style.transform = "translate( 0,-1000px)"
+        four2.style.opacity = "0"
+      }
+    },
+    { //三D立体图
+      inAn: function (){
+        let hideText = document.getElementById('hideText_3');
+        let showText = document.getElementById('showText_3');
+        
+        //控制文字一个个码上去效果
+        let word = hideText.innerText; //总长104
+        console.log(word.length)
+        let count = 0
+        function showTextFn() {
+          console.log('------第')
+          if (showText.innerText.length >= 89) {
+            // 显示的文字达到最大,清除定时器
+            clearInterval(textTimeId3 )
+            return
+          }
+          //逐步从隐藏的文字中读取赋值
+          showText.innerText = word.substring(0, count++);
+        }
+        textTimeId3 = setInterval(showTextFn, 100);
+      },
+
+      outAn: function (){
+        let hideText = document.getElementById('hideText_3');
+        let showText = document.getElementById('showText_3');
+
+        if ( !textTimeId3){
+          showText.innerText = ' '
+          //定时器存在且显示文字大于空白字符串,清除定时器
+          if ( textTimeId3  && (showText.innerText.length > 2) ){
+              clearInterval(textTimeId3)
+          }
+        }else{
+          showText.innerText = ' '    
+          clearInterval(textTimeId3)
+        }
+      }
+
+    },
+    { //乔巴
+      inAn: function () {
+        let six1_list1 = document.querySelector(".six1_list .six1_list1");
+        let six1_list2 = document.querySelector(".six1_list .six1_list2");
+        let six1_list3 = document.querySelector(".six1_list .six1_list3");
+        let six2 = document.querySelector(".six .six2");
+
+        setTimeout(function () {
+          six1_list2.style.transform = "translateX(0px)"
+        }, 500)
+        setTimeout(function () {
+          six1_list1.style.transform = "translateY(0px)"
+          six1_list3.style.transform = "translateY(0px)"
+          six2.style.transform = "translate( 0,0px)"
+        }, 1000)
+      },
+      outAn: function () {
+        let six1_list1 = document.querySelector(".six1_list .six1_list1");
+        let six1_list2 = document.querySelector(".six1_list .six1_list2");
+        let six1_list3 = document.querySelector(".six1_list .six1_list3");
+        let six2 = document.querySelector(".six .six2");
+
+        six1_list1.style.transform = "translateY(-1000px)"
+        six1_list2.style.transform = "translateX(-1000px)"
+        six1_list3.style.transform = "translateY( 1000px)"
+        six2.style.transform = "translate( 0,1000px)"
+
+      }
+    },
+    { //索隆
+      inAn: function () {
+        let three1_list1 = document.querySelector(".three1_list .three1_list1");
+        let three1_list2 = document.querySelector(".three1_list .three1_list2");
+        let three2 = document.querySelector(".three .three2");
+
+        three1_list1.style.transform = "translateX(0px)"
+        three1_list2.style.transform = "translateX(0px)"
+        three2.style.transform = "translateX(0px)"
+      },
+      outAn: function () {
+        let three1_list1 = document.querySelector(".three1_list .three1_list1");
+        let three1_list2 = document.querySelector(".three1_list .three1_list2");
+        let three2 = document.querySelector(".three .three2");
+
+        three1_list1.style.transform = "translateX(558px)"
+        three1_list2.style.transform = "translateX(279px)"
+        three2.style.transform = "translateX(-1000px)"
+      }
+    },
+    { //赏金
       inAn: function (){
         //获取用于隐藏/显示的源文字
         let hideText = document.getElementById('hideText_2');
         let showText = document.getElementById('showText_2');
         
         //控制文字一个个码上去效果
-        let word = hideText.innerText; //总厂148
+        let word = hideText.innerText; //85
         
         let count = 0
         function showTextFn() {
@@ -274,6 +281,38 @@ window.onload = function (){
           showText.innerText = ' '    
           clearInterval(textTimeId2)
         }
+      }
+    },
+    { //山治
+      inAn: function () {
+        let five1_list1 = document.querySelector(".five1_list .five1_list1");
+        let five1_list2 = document.querySelector(".five1_list .five1_list2");
+        let five1_list3 = document.querySelector(".five1_list .five1_list3");
+        let five2 = document.querySelector(".five .five2");
+
+        setTimeout(function () {
+          five1_list1.style.transform = "translate(0,0)"
+        }, 500)
+        setTimeout(function () {
+          five1_list2.style.transform = "translate(0,0)"
+        }, 1000)
+        setTimeout(function () {
+          five1_list3.style.transform = "translate(0,0)"
+        }, 1200)
+        setTimeout(function () {
+          five2.style.transform = "translate(0,0)"
+        }, 1500)
+      },
+      outAn: function () {
+        let five1_list1 = document.querySelector(".five1_list .five1_list1");
+        let five1_list2 = document.querySelector(".five1_list .five1_list2");
+        let five1_list3 = document.querySelector(".five1_list .five1_list3");
+        let five2 = document.querySelector(".five .five2");
+
+        five1_list1.style.transform = "translate(1000px,-1000px)"
+        five1_list2.style.transform = "translate(1000px,-1000px)"
+        five1_list3.style.transform = "translate( 1000px,-1000px)"
+        five2.style.transform = "translate( -1000px,-1000px)"
 
       }
     }
@@ -514,9 +553,10 @@ window.onload = function (){
   //图片懒加载
   lazy(index)
   function lazy(index){
-    const arr = ['one','two','three','four','five','six','seven','eight']
+    const arr = ['one','two','seven','four','nine','six','three','eight','five']
     switch (index) {
       case index:
+        console.log(arr[index])
         //获取指定li下的所有img标签
         let imgArr = document.querySelectorAll(`.${arr[index]} img`)
         for (var i = 0; i < imgArr.length; i++) {
