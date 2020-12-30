@@ -160,9 +160,9 @@ li {
 }
 #content .list .one .one4 .nav li {
   width: 14px;
-  height: 14px;
+  height: 10px;
   margin-left: 5px;
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 50%;
   transition: 1s background-color;
 }
@@ -244,7 +244,7 @@ li {
   display: flex;
   position: absolute;
   margin-top: 50px;
-  right: 10px;
+  right: 40px;
 }
 #content .list .three .three1 > .three1_list li {
   margin-left: 20px;
@@ -260,6 +260,15 @@ li {
 #content .list .three .three1 > .three1_list li span {
   margin-top: 30px;
   text-align: center;
+}
+#content .list .three .three1 #showText_5 {
+  position: absolute;
+  bottom: 40px;
+  right: 80px;
+  width: 700px;
+  text-indent: 2em;
+  font-size: 20px;
+  color: #B9BCB4;
 }
 #content .list .three .three2 {
   width: 250px;
@@ -282,8 +291,8 @@ li {
   padding: 5px;
 }
 #content .list .three .three3 {
-  width: 532px;
-  height: 500px;
+  width: 500px;
+  height: 470px;
   position: absolute;
   left: 0px;
   bottom: 0px;
@@ -318,6 +327,15 @@ li {
   margin-top: 30px;
   text-align: center;
   display: inline-block;
+}
+#content .list .four .four1 #showText_4 {
+  position: absolute;
+  bottom: 40px;
+  left: 130px;
+  width: 700px;
+  text-indent: 2em;
+  font-size: 20px;
+  color: #b68f75;
 }
 #content .list .four .four2 {
   width: 180px;
@@ -356,7 +374,7 @@ li {
   display: flex;
   position: absolute;
   margin-top: 50px;
-  right: 10px;
+  right: 40px;
 }
 #content .list .five .five1 > .five1_list li {
   width: 259px;
@@ -372,6 +390,15 @@ li {
 #content .list .five .five1 > .five1_list li span {
   margin-top: 30px;
   text-align: center;
+}
+#content .list .five .five1 #showText_7 {
+  position: absolute;
+  bottom: 40px;
+  right: 80px;
+  width: 700px;
+  text-indent: 2em;
+  font-size: 20px;
+  color: #B9BCB4;
 }
 #content .list .five .five2 {
   width: 250px;
@@ -432,6 +459,15 @@ li {
   margin-top: 30px;
   text-align: center;
 }
+#content .list .six .six1 #showText_6 {
+  position: absolute;
+  bottom: 40px;
+  left: 130px;
+  width: 700px;
+  font-size: 20px;
+  text-indent: 2em;
+  color: #a0a08c;
+}
 #content .list .six .six2 {
   width: 250px;
   position: absolute;
@@ -477,7 +513,7 @@ li {
 #content .list .seven .seven1 video {
   border-radius: 15px;
 }
-#content .list .seven .seven1 #showText {
+#content .list .seven .seven1 #showText_1 {
   margin-top: 40px;
   font-size: 20px;
   text-indent: 2em;
@@ -754,7 +790,7 @@ li {
   height: 12px;
   margin-top: 5px;
   border-radius: 50%;
-  border: 1px solid black;
+  border: 2px solid black;
   transition: 1s background-color;
 }
 #content .dot li a {
