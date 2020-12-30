@@ -28,9 +28,6 @@
     }
   }
 
-  //1 控制鼠标滚动切换屏入场动画
-  
-
   //1控制头部导航的背景类
   headerBind();
   function headerBind() {
