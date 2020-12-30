@@ -90,7 +90,7 @@ window.onload = function (){
         let showText = document.getElementById('showText');
 
         //控制文字一个个码上去效果
-        let word = hideText.innerText; //总厂148
+        let word = hideText.innerText; //总厂151
         
         let count = 0
         function showTextFn() {
@@ -160,7 +160,7 @@ window.onload = function (){
         let showText = document.getElementById('showText_3');
         
         //控制文字一个个码上去效果
-        let word = hideText.innerText; //总长104
+        let word = hideText.innerText; //总长89
         console.log(word.length)
         let count = 0
         function showTextFn() {

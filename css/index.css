@@ -479,8 +479,8 @@ li {
 }
 #content .list .seven .seven1 #showText {
   margin-top: 40px;
-  text-indent: 2em;
   font-size: 20px;
+  text-indent: 2em;
   color: #b3adad;
 }
 #content .list .seven .seven2 {
@@ -597,10 +597,10 @@ li {
   position: absolute;
   top: 64px;
   right: 50px;
-  text-indent: 2em;
   width: 450px;
   font-size: 28px;
   color: #777761;
+  text-indent: 2em;
 }
 #content .list .eight .eight3 {
   position: absolute;
