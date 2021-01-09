@@ -264,18 +264,11 @@
   lazy(index)
   function lazy(index) {
     const arr = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
-    switch (index) {
-      case index:
-        console.log(arr[index])
         //获取指定li下的所有img标签
         let imgArr = document.querySelectorAll(`.${arr[index]} img`)
         for (var i = 0; i < imgArr.length; i++) {
           imgArr[i].src = imgArr[i].getAttribute('data-src');
         }
-        break;
-      default:
-        break;
-    }
   }
 
   //调整浏览器分辨率时执行

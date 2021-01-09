@@ -1,9 +1,11 @@
 //该文件主要是用于控制特效的
-let textTimeId
-let textTimeId2
-let textTimeId3
-let textTimeId4
-let textTimeId5
+let textTimeId_3
+let textTimeId_4
+let textTimeId_5
+let textTimeId_6
+let textTimeId_7
+let textTimeId_8
+let textTimeId_9
 let arrAn = [
     { //首页
       inAn: function () {
@@ -62,22 +64,20 @@ let arrAn = [
         three2.style.transform = "translateX(0px)"
 
          //控制文字一个个码上去效果
-         let hideText = document.getElementById('hideText_5');
-         let showText = document.getElementById('showText_5');
+         let hideText = document.getElementById('hideText_3');
+         let showText = document.getElementById('showText_3');
          let word = hideText.innerText; //总厂151
          let count = 0
          function showTextFn() {
-           console.log('计时')
            if (showText.innerText.length >= word.length) {
-             console.log('----清除')
              // 显示的文字达到最大,清除定时器
-             clearInterval(textTimeId5)
+             clearInterval(textTimeId_3)
              return
            }
            //逐步从隐藏的文字中读取赋值
            showText.innerText = word.substring(0, count++);
          }
-         textTimeId5 = setInterval(showTextFn, 100);
+         textTimeId_3 = setInterval(showTextFn, 100);
 
       },
       outAn: function () {
@@ -89,16 +89,16 @@ let arrAn = [
         three1_list2.style.transform = "translateX(279px)"
         three2.style.transform = "translateX(-1000px)"
 
-        let showText = document.getElementById('showText_5');
-        if (!textTimeId5) {
+        let showText = document.getElementById('showText_3');
+        if (!textTimeId_3) {
           showText.innerText = ' '
           //定时器存在且显示文字大于空白字符串,清除定时器
-          if (textTimeId5 && (showText.innerText.length > 2)) {
-            clearInterval(textTimeId5)
+          if (textTimeId_3 && (showText.innerText.length != 0 )) {
+            clearInterval(textTimeId_3)
           }
         } else {
           showText.innerText = ' '
-          clearInterval(textTimeId4)
+          clearInterval(textTimeId_3)
         }
 
       }
@@ -126,17 +126,15 @@ let arrAn = [
         let word = hideText.innerText; //总厂151
         let count = 0
         function showTextFn() {
-          console.log('计时')
           if (showText.innerText.length >= word.length) {
-            console.log('----清除')
             // 显示的文字达到最大,清除定时器
-            clearInterval(textTimeId4)
+            clearInterval(textTimeId_4)
             return
           }
           //逐步从隐藏的文字中读取赋值
           showText.innerText = word.substring(0, count++);
         }
-        textTimeId4 = setInterval(showTextFn, 100);
+        textTimeId_4 = setInterval(showTextFn, 100);
       },
       outAn: function () {
         let four1_list1 = document.querySelector(".four1_list .four1_list1");
@@ -150,15 +148,15 @@ let arrAn = [
         four2.style.opacity = "0"
 
         let showText = document.getElementById('showText_4');
-        if (!textTimeId4) {
+        if (!textTimeId_4) {
           showText.innerText = ' '
           //定时器存在且显示文字大于空白字符串,清除定时器
-          if (textTimeId4 && (showText.innerText.length > 2)) {
-            clearInterval(textTimeId4)
+          if (textTimeId_4 && (showText.innerText.length != 0)) {
+            clearInterval(textTimeId_4)
           }
         } else {
           showText.innerText = ' '
-          clearInterval(textTimeId4)
+          clearInterval(textTimeId_4)
         }
 
       }
@@ -184,22 +182,20 @@ let arrAn = [
         }, 1500)
 
          //控制文字一个个码上去效果
-         let hideText = document.getElementById('hideText_7');
-         let showText = document.getElementById('showText_7');
+         let hideText = document.getElementById('hideText_5');
+         let showText = document.getElementById('showText_5');
          let word = hideText.innerText; //总厂151
          let count = 0
          function showTextFn() {
-           console.log('计时')
            if (showText.innerText.length >= word.length) {
-             console.log('----清除')
              // 显示的文字达到最大,清除定时器
-             clearInterval(textTimeId5)
+             clearInterval(textTimeId_5)
              return
            }
            //逐步从隐藏的文字中读取赋值
            showText.innerText = word.substring(0, count++);
          }
-         textTimeId5 = setInterval(showTextFn, 100);
+         textTimeId_5 = setInterval(showTextFn, 100);
         
       },
       outAn: function () {
@@ -213,16 +209,16 @@ let arrAn = [
         five1_list3.style.transform = "translate( 1000px,-1000px)"
         five2.style.transform = "translate( -1000px,-1000px)"
 
-        let showText = document.getElementById('showText_7');
-        if (!textTimeId5) {
+        let showText = document.getElementById('showText_5');
+        if (!textTimeId_5) {
           showText.innerText = ' '
           //定时器存在且显示文字大于空白字符串,清除定时器
-          if (textTimeId5 && (showText.innerText.length > 2)) {
-            clearInterval(textTimeId5)
+          if (textTimeId_5 && (showText.innerText.length != 0 )) {
+            clearInterval(textTimeId_5)
           }
         } else {
           showText.innerText = ' '
-          clearInterval(textTimeId4)
+          clearInterval(textTimeId_5)
         }
       }
     },
@@ -248,17 +244,15 @@ let arrAn = [
         let word = hideText.innerText; //总厂151
         let count = 0
         function showTextFn() {
-          console.log('计时')
           if (showText.innerText.length >= word.length) {
-            console.log('----清除')
             // 显示的文字达到最大,清除定时器
-            clearInterval(textTimeId5)
+            clearInterval(textTimeId_6)
             return
           }
           //逐步从隐藏的文字中读取赋值
           showText.innerText = word.substring(0, count++);
         }
-        textTimeId5 = setInterval(showTextFn, 100);
+        textTimeId_6 = setInterval(showTextFn, 100);
 
 
       },
@@ -274,15 +268,15 @@ let arrAn = [
         six2.style.transform = "translate( 0,1000px)"
 
         let showText = document.getElementById('showText_6');
-        if (!textTimeId5) {
+        if (!textTimeId_6) {
           showText.innerText = ' '
           //定时器存在且显示文字大于空白字符串,清除定时器
-          if (textTimeId5 && (showText.innerText.length > 2)) {
-            clearInterval(textTimeId5)
+          if (textTimeId_6 && (showText.innerText.length != 0)) {
+            clearInterval(textTimeId_6)
           }
         } else {
           showText.innerText = ' '
-          clearInterval(textTimeId4)
+          clearInterval(textTimeId_6)
         }
 
       }
@@ -290,41 +284,39 @@ let arrAn = [
     {//罗宾先执行out 再执行in
       inAn: function () {
         //获取用于隐藏/显示的源文字
-        let hideText = document.getElementById('hideText');
-        let showText = document.getElementById('showText_1');
+        let hideText = document.getElementById('hideText_7');
+        let showText = document.getElementById('showText_7');
 
         //控制文字一个个码上去效果
         let word = hideText.innerText; //总厂151
 
         let count = 0
         function showTextFn() {
-          console.log('计时')
-          if (showText.innerText.length >= 151) {
-            console.log('----清除')
+          if (showText.innerText.length >= word.length) {
             // 显示的文字达到最大,清除定时器
-            clearInterval(textTimeId)
+            clearInterval(textTimeId_7)
             return
           }
           //逐步从隐藏的文字中读取赋值
           showText.innerText = word.substring(0, count++);
         }
-        textTimeId = setInterval(showTextFn, 100);
+        textTimeId_7 = setInterval(showTextFn, 100);
 
       },
 
       outAn: function () {
         //获取用于隐藏/显示的源文字
-        let showText = document.getElementById('showText_1');
+        let showText = document.getElementById('showText_7');
 
-        if (!textTimeId) {
-          showText.innerText = ' '
+        if (!textTimeId_7) {
+          showText.innerText = ''
           //定时器存在且显示文字大于空白字符串,清除定时器
-          if (textTimeId && (showText.innerText.length > 2)) {
-            clearInterval(textTimeId)
+          if (textTimeId_7 && (showText.innerText.length != 0)) {
+            clearInterval(textTimeId_7)
           }
         } else {
-          showText.innerText = ' '
-          clearInterval(textTimeId)
+          showText.innerText = ''
+          clearInterval(textTimeId_7)
         }
 
       }
@@ -332,77 +324,72 @@ let arrAn = [
     { //赏金
       inAn: function () {
         //获取用于隐藏/显示的源文字
-        let hideText = document.getElementById('hideText_2');
-        let showText = document.getElementById('showText_2');
+        let hideText = document.getElementById('hideText_8');
+        let showText = document.getElementById('showText_8');
 
         //控制文字一个个码上去效果
         let word = hideText.innerText; //85
         let count = 0
         function showTextFn() {
-          console.log('函数')
-          if (showText.innerText.length >= 85) {
-            console.log('----')
+          if (showText.innerText.length >= word.length) {
             // 显示的文字达到最大,清除定时器
-            clearInterval(textTimeId2)
+            clearInterval(textTimeId_8)
             return
           }
           //逐步从隐藏的文字中读取赋值
           showText.innerText = word.substring(0, count++);
         }
-        textTimeId2 = setInterval(showTextFn, 100);
+        textTimeId_8 = setInterval(showTextFn, 100);
 
       },
       outAn: function () {
         //获取用于隐藏/显示的源文字
-        let showText = document.getElementById('showText_2');
+        let showText = document.getElementById('showText_8');
 
-        if (!textTimeId2) {
+        if (!textTimeId_8) {
           showText.innerText = ' '
           //定时器存在且显示文字大于空白字符串,清除定时器
-          if (textTimeId2 && (showText.innerText.length > 2)) {
-            clearInterval(textTimeId2)
+          if (textTimeId_8 && (showText.innerText.length != 0)) {
+            clearInterval(textTimeId_8)
           }
         } else {
           showText.innerText = ' '
-          clearInterval(textTimeId2)
+          clearInterval(textTimeId_8)
         }
       }
     },
     { //三D立体图
       inAn: function () {
-        let hideText = document.getElementById('hideText_3');
-        let showText = document.getElementById('showText_3');
+        let hideText = document.getElementById('hideText_9');
+        let showText = document.getElementById('showText_9');
 
         //控制文字一个个码上去效果
         let word = hideText.innerText; //总长89
-        console.log(word.length)
         let count = 0
         function showTextFn() {
-          console.log('------第')
-          if (showText.innerText.length >= 89) {
-            console.log('清除')
+          if (showText.innerText.length >= word.length) {
             // 显示的文字达到最大,清除定时器
-            clearInterval(textTimeId3)
+            clearInterval(textTimeId_9)
             return
           }
           //逐步从隐藏的文字中读取赋值
           showText.innerText = word.substring(0, count++);
         }
-        textTimeId3 = setInterval(showTextFn, 100);
+        textTimeId_9 = setInterval(showTextFn, 100);
       },
 
       outAn: function () {
-        let showText = document.getElementById('showText_3');
+        let showText = document.getElementById('showText_9');
 
-        if (!textTimeId3) {
+        if (!textTimeId_9) {
           showText.innerText = ' '
           //定时器存在且显示文字大于空白字符串,清除定时器
-          if (textTimeId3 && (showText.innerText.length > 2)) {
-            clearInterval(textTimeId3)
+          if (textTimeId_9 && (showText.innerText.length != 0)) {
+            clearInterval(textTimeId_9)
           }
         } else {
           showText.innerText = ' '
-          clearInterval(textTimeId3)
+          clearInterval(textTimeId_9)
         }
       }
 

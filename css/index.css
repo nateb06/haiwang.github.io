@@ -105,9 +105,17 @@ li {
   transition: 1s transform;
 }
 #content .list .one .one2 {
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  right: 0px;
   transition: 1s transform;
 }
 #content .list .one .one3 {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 70px;
   width: 600px;
   height: 400px;
   margin: 100px auto 0px;
@@ -147,6 +155,10 @@ li {
   animation: 1s rightHide 1 linear;
 }
 #content .list .one .one4 {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 50px;
   width: 100%;
   text-align: center;
   display: flex;
@@ -232,8 +244,10 @@ li {
   bottom: 0px;
   right: 300px;
   z-index: 1;
-  background: url("../images/lufeiqc.png") no-repeat;
-  animation: 15s luFei infinite;
+  animation: 15s boat infinite;
+}
+#content .list .two .two4 img{
+  width: 100%;
 }
 #content .list .three {
   background: url("../images/s3.jpg") center center;
@@ -261,7 +275,7 @@ li {
   margin-top: 30px;
   text-align: center;
 }
-#content .list .three .three1 #showText_5 {
+#content .list .three .three1 #showText_3 {
   position: absolute;
   bottom: 40px;
   right: 80px;
@@ -361,9 +375,11 @@ li {
   width: 417px;
   height: 485px;
   position: absolute;
-  background: url("../images/nameidar.png") no-repeat;
   right: 0px;
   bottom: 0px;
+}
+#content .list .four .four3 img{
+  width: 100%;
 }
 #content .list .five {
   background: url("../images/s5.jpg") center center;
@@ -391,7 +407,7 @@ li {
   margin-top: 30px;
   text-align: center;
 }
-#content .list .five .five1 #showText_7 {
+#content .list .five .five1 #showText_5 {
   position: absolute;
   bottom: 40px;
   right: 80px;
@@ -513,7 +529,7 @@ li {
 #content .list .seven .seven1 video {
   border-radius: 15px;
 }
-#content .list .seven .seven1 #showText_1 {
+#content .list .seven .seven1 #showText_7 {
   margin-top: 40px;
   font-size: 20px;
   text-indent: 2em;
@@ -629,7 +645,7 @@ li {
   color: #777761;
   text-align: center;
 }
-#content .list .eight .eight2 div {
+#content .list .eight .eight2 #showText_8 {
   position: absolute;
   top: 64px;
   right: 50px;
@@ -650,6 +666,7 @@ li {
   position: absolute;
   top: -270px;
   right: 50px;
+  animation: 30s boat infinite;
 }
 #content .list .nine {
   background: url('../images/s5.jpg');
@@ -770,7 +787,7 @@ li {
 #content .list .nine .nine3 img {
   width: 100%;
 }
-#content .list .nine .nine4 #showText_3 {
+#content .list .nine .nine4 #showText_9 {
   position: absolute;
   left: 450px;
   bottom: 85px;
@@ -806,7 +823,7 @@ li {
 #content .dot li.active a {
   cursor: default;
 }
-@keyframes luFei {
+@keyframes boat {
   0% {
     transform: translateX(0) rotateY(0);
   }
